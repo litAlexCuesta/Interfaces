@@ -1,6 +1,6 @@
 package ClaseAnonima;
 
-//Definición de la interfaz Transporte
+//INTERFAZ TRANSPORTE
 interface Transporte {
  void acelerar();
  void frenar();
@@ -9,7 +9,7 @@ interface Transporte {
 
 public class Main {
  public static void main(String[] args) {
-     // Implementación de la clase Coche (usando una clase anónima)
+     // IMPLEMENTACION COCHE CON CLASE ANONIMA
      Transporte coche = new Transporte() {
          @Override
          public void acelerar() {
@@ -27,7 +27,7 @@ public class Main {
          }
      };
 
-     // Implementación de la clase Avión (usando una clase anónima)
+     // IMPLEMENTACION AVION CON CLASE ANONIMA
      Transporte avion = new Transporte() {
          @Override
          public void acelerar() {
@@ -45,7 +45,7 @@ public class Main {
          }
      };
 
-     // Implementación de la clase Barco (usando una clase anónima)
+     // IMPLEMENTACION BARCO CON CLASE ANONIMA
      Transporte barco = new Transporte() {
          @Override
          public void acelerar() {
@@ -63,7 +63,7 @@ public class Main {
          }
      };
 
-     // Utilización de los objetos de transporte
+     // UTILIZACION DE LOS OBJETOS
      System.out.println("Coche:");
      coche.acelerar();
      coche.frenar();
