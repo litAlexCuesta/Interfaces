@@ -6,4 +6,5 @@
  *
  */
 module InterfacesGitHub {
+	requires java.desktop;
 }
