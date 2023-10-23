@@ -5,6 +5,8 @@ import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -72,6 +74,16 @@ public class Ventana2 extends JFrame {
 		
 		JButton euroADolar = new JButton("Euros a dolares");
 		JButton dolarAEuro = new JButton("Dolares a euros");
+		
+		// Implementación ActionListener
+		euroADolar.addActionListener(
+		new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+		java.awt.Toolkit.getDefaultToolkit().beep();
+		}
+		});
+		
 		// Inserto los elementos en el contenedor principal
 		this.panelSur.add(this.etiqueta);
 		this.panelSur.add(euroADolar);

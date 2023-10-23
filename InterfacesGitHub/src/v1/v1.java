@@ -3,6 +3,8 @@ package v1;
 import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -25,6 +27,16 @@ public class v1 extends JFrame{
 		
 		JLabel t = new JLabel("Presiona el boton");
 		JButton presionaBoton = new JButton("Click aquí");
+		presionaBoton.addActionListener(
+				new ActionListener() {
+					
+					@Override
+					public void actionPerformed(ActionEvent e) {
+						t.setText("¡HAS PULSADO EL BOTON!");
+						
+					}
+				}
+				);
 		
 		this.panelNorte = new JPanel();
 		this.panelNorte.setLayout(new FlowLayout());
