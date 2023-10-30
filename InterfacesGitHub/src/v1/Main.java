@@ -7,7 +7,9 @@ public class Main {
 		
 		// v2 v2 = new v2("Ventana 2");
 		
-		v3 v3 = new v3("Ventana 3");
+		// v3 v3 = new v3("Ventana 3");
+		
+		// v4 v4 = new v4("Ventana 4");
 
 	}
 
